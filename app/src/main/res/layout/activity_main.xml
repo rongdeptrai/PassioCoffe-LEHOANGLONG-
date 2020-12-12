@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:paddingBottom="50dp"
+    android:background="@drawable/bg_passio">
+
+
+   <LinearLayout
+       android:layout_alignParentBottom="true"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:paddingLeft="38dp"
+       android:paddingRight="38dp"
+       android:orientation="vertical">
+       <Button
+           android:fontFamily="@font/gotham"
+           android:text="ĐĂNG NHẬP BẰNG SỐ ĐIỆN THOẠI"
+           android:textSize="12dp"
+           android:textColor="#fff"
+           android:id="@+id/btn-lg-phone-322"
+           android:background="@drawable/bg_phone_322"
+           android:layout_width="match_parent"
+           android:layout_height="50dp"/>
+       <View
+           android:layout_width="wrap_content"
+           android:layout_height="15dp"/>
+       <Button
+           android:fontFamily="@font/gotham"
+           android:textSize="12dp"
+           android:text="ĐĂNG NHẬP BẰNG FACEBOOK"
+           android:textColor="#fff"
+           android:id="@+id/btn-login-face-322"
+           android:background="@drawable/bg_login_fb_322"
+           android:layout_width="match_parent"
+           android:layout_height="50dp"/>
+   </LinearLayout>
+
+</RelativeLayout>

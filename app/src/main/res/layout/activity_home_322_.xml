@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Home_322_Activity"
+    android:orientation="vertical">
+
+
+        <LinearLayout
+            android:id="@+id/top_322"
+            android:layout_width="match_parent"
+            android:layout_height="90dp"
+            android:orientation="horizontal"
+            android:paddingBottom="8dp"
+            android:background="#91BC2E"
+
+            >
+
+        <ImageButton
+            android:id="@+id/btn_profile"
+            android:layout_gravity="bottom"
+            android:layout_width="85dp"
+            android:layout_height="60dp"
+            android:background="@drawable/avata_322"
+            />
+            <LinearLayout
+                android:layout_marginBottom="5dp"
+                android:layout_gravity="bottom"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <TextView
+                    android:id="@+id/txt_phone"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="#fff"
+                    android:textSize="12dp"
+                    android:fontFamily="@font/gotham"
+                    android:text=""
+                    android:visibility="visible"/>
+        <TextView
+            android:id="@+id/txt_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#fff"
+            android:textSize="12dp"
+            android:fontFamily="@font/gotham"
+            android:text="Lê Hoàng Long"/>
+         <TextView
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:textColor="#fff"
+             android:textSize="15dp"
+             android:textStyle="bold"
+             android:fontFamily="@font/gotham"
+             android:text="0 điểm"/>
+            </LinearLayout>
+            <View
+                android:layout_width="150dp"
+                android:layout_height="0dp"/>
+            <ImageButton
+                android:layout_gravity="bottom"
+                android:layout_width="70dp"
+                android:layout_height="50dp"
+                android:background="@drawable/gifs"/>
+            <ImageButton
+                android:id="@+id/location"
+                android:layout_gravity="bottom"
+                android:layout_width="40dp"
+                android:layout_height="45dp"
+                android:background="@drawable/localpassion"/>
+            <View
+                android:layout_width="10dp"
+                android:layout_height="0dp"/>
+            <ImageButton
+                android:layout_gravity="bottom"
+                android:layout_width="40dp"
+                android:layout_height="45dp"
+                android:background="@drawable/noice"/>
+        </LinearLayout>
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/top_322"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="250dp">
+
+                <ImageView
+                    android:layout_width="300dp"
+                    android:layout_height="200dp"
+                    android:layout_centerInParent="true"
+                    android:src="@drawable/green_card" />
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingLeft="20dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/gotham"
+                    android:text="Ưu đãi dành cho bạn"
+                    android:textColor="#000"
+                    android:textSize="15dp"
+                    android:textStyle="bold" />
+                <View
+                    android:layout_width="wrap_content"
+                    android:layout_height="20dp"/>
+                <ImageView
+                    android:layout_width="200dp"
+                    android:layout_height="150dp"
+                    android:src="@drawable/pay" />
+            </LinearLayout>
+            <View
+                android:layout_width="wrap_content"
+                android:layout_height="20dp"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="3000dp"
+                android:orientation="vertical"
+                android:paddingLeft="20dp"
+               >
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/gotham"
+                    android:text="Tin tức"
+                    android:textColor="#000"
+                    android:textSize="15dp"
+                    android:textStyle="bold" />
+                <View
+                    android:layout_width="wrap_content"
+                    android:layout_height="20dp"/>
+                <ListView
+                    android:id="@+id/listview"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    />
+            </LinearLayout>
+        </LinearLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+    <ImageButton
+        android:id="@+id/img_oder"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="50dp"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:background="@drawable/passion_iconorder"/>
+</RelativeLayout>

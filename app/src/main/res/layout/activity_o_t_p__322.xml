@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff"
+    tools:context=".OTP_Activity_322"
+    >
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp">
+
+        </LinearLayout>
+        <LinearLayout
+            android:padding="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:orientation="horizontal">
+            <ImageView
+                android:layout_width="45dp"
+                android:layout_height="30dp"
+                android:src="@drawable/ic_back_322"/>
+            <View
+                android:layout_width="20dp"
+                android:layout_height="wrap_content">
+            </View>
+            <TextView
+                android:textAlignment="center"
+                android:textSize="24dp"
+                android:fontFamily="@font/gotham"
+                android:textColor="#000"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Nhập mã OTP"/>
+        </LinearLayout>
+        <LinearLayout
+            android:padding="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="120dp">
+                <TextView
+                    android:id="@+id/txt1"
+                    android:layout_centerInParent="true"
+                    android:textSize="20dp"
+                    android:textStyle="bold"
+                    android:fontFamily="@font/gotham"
+                    android:textColor="#60B829"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Mã OPT đã được gửi đến "
+                    android:layout_marginBottom="10dp"/>
+                <TextView
+                    android:layout_below="@+id/txt1"
+                    android:layout_centerInParent="true"
+                    android:textSize="15dp"
+                    android:textStyle="bold"
+                    android:fontFamily="@font/gotham"
+                    android:textColor="#000"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@id/txt_phoneNub"
+                    android:text="sdt"/>
+
+            </RelativeLayout>
+            <LinearLayout
+                android:padding="12dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                >
+                <EditText
+                    android:id="@+id/txt_OTP"
+                    android:gravity="center"
+                    android:hint="Nhập mã OTP tại đây"
+                    android:background="#92F1F1F1"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp" />
+            </LinearLayout>
+            <LinearLayout
+                android:padding="12dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <TextView
+                    android:gravity="center_horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="#60B829"
+                    android:fontFamily="@font/gotham"
+                    android:text="Mã OTP sẽ được gửi lại sau 60s"/>
+                <View
+                    android:layout_width="wrap_content"
+                    android:layout_height="10dp"/>
+                <Button
+                    android:background="#60FDFDFD"
+                    android:id="@+id/btn_Verify"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:text="Xác Nhận"/>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

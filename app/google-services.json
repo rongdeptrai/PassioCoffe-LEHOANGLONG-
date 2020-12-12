@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "611884032862",
+    "project_id": "passiocoffe",
+    "storage_bucket": "passiocoffe.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:611884032862:android:b527d3a60fd27482c325cf",
+        "android_client_info": {
+          "package_name": "com.hoanglong_322.passiocoffe"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "611884032862-73pfaaqoevls9hsdphnpuu5f73dcivgn.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.hoanglong_322.passiocoffe",
+            "certificate_hash": "a23a62a3a90c7d18e120ce018953c40ab001fbb4"
+          }
+        },
+        {
+          "client_id": "611884032862-9jrj6mauviuk8h1oc35m236tditm4j3q.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAaTK5BTbCP88m28icImKqj0XCveYbyCOA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "611884032862-9jrj6mauviuk8h1oc35m236tditm4j3q.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

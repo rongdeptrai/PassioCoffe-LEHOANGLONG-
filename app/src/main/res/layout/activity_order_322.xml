@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".OrderActivity_322"
+
+    >
+    <LinearLayout
+
+        android:id="@+id/ln1"
+        android:layout_width="match_parent"
+        android:paddingBottom="70dp"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+    <LinearLayout
+        android:id="@+id/re1"
+        android:padding="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal">
+        <ImageView
+            android:layout_width="45dp"
+            android:layout_height="30dp"
+            android:src="@drawable/ic_back_322"/>
+        <View
+            android:layout_width="20dp"
+            android:layout_height="wrap_content">
+        </View>
+        <TextView
+            android:textAlignment="center"
+            android:textSize="24dp"
+            android:fontFamily="@font/gotham"
+            android:textColor="#000"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Chọn món"/>
+    </LinearLayout>
+
+        <LinearLayout
+            android:layout_marginTop="30dp"
+            android:layout_below="@id/re1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <com.google.android.material.tabs.TabLayout
+                android:id="@+id/tabLayout"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                app:tabSelectedTextColor="#85BC2E"
+                app:tabIndicatorColor="#95BC2E"
+                app:tabTextColor="#756F6F"
+                tools:ignore="MissingClass">
+            </com.google.android.material.tabs.TabLayout>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <androidx.viewpager.widget.ViewPager
+                android:id="@+id/viewPager"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="20dp"
+                >
+            </androidx.viewpager.widget.ViewPager>
+
+        </LinearLayout>
+    </LinearLayout>
+    <Button
+        android:id="@+id/btn_order"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/bg_phone_322"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="10dp"
+        android:text="Order"
+        android:textColor="#fff"
+        android:fontFamily="@font/gotham"
+        android:textStyle="bold"/>
+
+
+</RelativeLayout>
